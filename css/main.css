@@ -74,12 +74,16 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #d33f8d;
+  color: #c9e07d;
 }
 
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
+}
+
+.regdetails{
+  font-family: Raleway-Bold;
 }
 
 p {
@@ -161,7 +165,7 @@ iframe {
 }
 
 .hov1:hover {
-  border-color: #d33f8d;
+  border-color: #c9e07d;
 }
 
 
@@ -280,6 +284,12 @@ iframe {
   overflow: hidden;
 }
 
+.wrap-login200 {
+  width: 450px;
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
 
 
 /*------------------------------------------------------------------
@@ -391,7 +401,7 @@ iframe {
 }
 
 .input100:focus + .focus-input100 + .symbol-input100 {
-  color: #d33f8d;
+  color: #c9e07d;
   padding-left: 18px;
 }
 
@@ -487,7 +497,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background: #333333;
+  background: #c9e07d;
 }
 
 /*------------------------------------------------------------------
@@ -541,7 +551,7 @@ iframe {
 
 .btn-face:hover,
 .btn-google:hover {
-  border-color: #d33f8d;
+  border-color: #c9e07d;
 }
 
 

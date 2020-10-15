@@ -734,3 +734,15 @@ width: 99%; }
 .cardo{
     background-color: white;
 }
+
+a{
+  font-family: Poppins-Bold;
+}
+
+body, html, p{
+  font-family: Poppins-Regular, sans-serif;
+}
+
+h1, h2, h3, h6, h4, h5{
+  font-family: Raleway-Bold;
+}
