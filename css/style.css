@@ -107,8 +107,9 @@ textarea {
   border: none;
 }
 
+
 textarea:focus, input:focus {
-  border-color: transparent !important;
+  border-color: black !important;
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
