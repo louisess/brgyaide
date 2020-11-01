@@ -51,6 +51,10 @@
             <li class="nav-item">
               <a class="nav-link" href="resaccount.html">My Account</a>
             </li>
+            <li class="nav-item">
+              
+              <a href="#" class="nav-link" id="btnLogout" >Logout</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -69,8 +73,8 @@
                 <div class="row">
                     <h6>Welcome,</h6>
                   </div>
-                      <div class="row">
-                      <h2 class="myfont">Hermione Granger</h2>
+                      <div class="row" id="dispUser">
+                      <!--displays uer data here-->
                       </div>
                       <div class="row mt-2">
                         <h6>Resident</h6>
@@ -218,14 +222,23 @@
 
   
 <!--===============================================================================================-->  
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/bootstrap/js/popper.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../vendor/bootstrap/js/popper.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/select2/select2.min.js"></script>
+  <script src="../../vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-  <script src="js/main.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/index.js"></script>
+
 
 </body>
 </html>
