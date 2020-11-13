@@ -205,23 +205,22 @@ var postOwner = db.collection("users").doc(doc.data().userID);
 
 					
 //window.yes = doc.data().name;
+db.collection("users").doc(doc.data().userID).get().then(function(querySnapshot1){querySnapshot1.data().name
+	var name = querySnapshot1.get("name");
+	
+
+
 
 dispFeed.innerHTML += 
 "<div class='row'>"+
 	"<div class='card' style='width:100%;'>"+
 		"<div class='card-body cardo'>"+
-			"<p>by <strong>"+postOwner.get().then(function(doc) {
-					    if (doc.exists) {
-					    	 doc.data().name;
-					    	
-					       console.log("Document data:", doc.data().name);
-					    } else {
-					        // doc.data() will be undefined in this case
-					        console.log("No such document!");
-					    }
-	}).catch(function(error) {
-	console.log("Error getting document:", error);
-});+"</strong></p>"+
+			"<p>by <strong>"+
+
+		name
+
+	
+						+"</strong></p>"+
 			"<p class='card-text'>" +noTZ+ " | <strong>" +doc.data().issue+ "</strong> | <strong>" +doc.data().barangayName+  "</strong></p>"+
 			"<p class='card-text'>" +doc.data().description+ "</p><img src='"+doc.data().images+ "' class='card-img'>"+
 		"</div>"+
@@ -241,7 +240,7 @@ dispFeed.innerHTML +=
 	"</div>"+
 "</div>"
 
-
+})
         });
 
     }).catch(function(error) {
@@ -252,7 +251,10 @@ dispFeed.innerHTML +=
 /*-------------------------feed----------------------------*/
 
 
-/**/
+/*
+
+
+*/
 
 /*var postOwner = db.collection("users").doc(doc.data().userID);
 
