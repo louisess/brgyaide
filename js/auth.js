@@ -23,19 +23,20 @@ function register(){
 	var inputEmail = document.getElementById("email");
 	var inputPass = document.getElementById("pass");
 
-	var inputfName = document.getElementById("fname").value;
-	var inputlName = document.getElementById("lname").value;
+	var inputName = document.getElementById("name").value;
+	//var inputlName = document.getElementById("lname").value;
 	//const promise = auth.createUserWithEmailAndPassword(inputEmail.value, inputPass.value);
 	//promise.catch(e=> alert(e.message));
 	
 	firebase.auth().createUserWithEmailAndPassword(inputEmail.value, inputPass.value)
 	.then(function(data){
 		var uidGet = data.user.uid; //unique Id
- 		 console.log('uid',data.user.uid); //displays newly created user's unique ID in the console
+		var userEmail = data.user.email;
+ 		console.log('uid',data.user.uid); //displays newly created user's unique ID in the console
 
   		db.collection("users").doc(uidGet).set({
-	    fname: inputfName,
-	    lname: inputlName,
+	    name: inputName,
+	    email: userEmail,
 	    role: "1", //1 - resident, 2 - official, 3 - admin;
 	    uid: uidGet
 		});
@@ -57,7 +58,8 @@ firebase.auth().onAuthStateChanged(firebaseUser=> {
 			
 			console.log(firebaseUser); //displays CURRENTLY logged in user data
 			console.log("^ logged in.")
-			setTimeout("location.href = 'modules/residents/resfeed.html';",2500);
+			
+			setTimeout("location.href = 'modules/residents/resfeed.html';",2000);
 		}
 		else {
 			console.log('no one logged in.');

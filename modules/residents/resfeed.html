@@ -68,60 +68,75 @@
   <div class="posts">
     <div class="row">
           <div class="col-md-4">
+
             <div class="card">
               <div class="card-body m-4">
                 <div class="row">
                     <h6>Welcome,</h6>
                   </div>
                       <div class="row" id="dispUser">
-                      <!--displays uer data here-->
+                      <!--displays user data here-->
                       </div>
                       <div class="row mt-2">
                         <h6>Resident</h6>
-                      </div>
-
+                        
+                      </div> 
+                      <hr>
                       <div class="row mt-3">
+                      
                      <form>
+
                       <div class="form-group">
-                        <hr>
+                       
                         <h6 class="mb-3"><span class="lnr lnr-bubble"></span> Have an issue?</h6>
                         <div class="row m-1">
-                          <div class="form-group">
-                              <select id="inputIssue" class="form-control">
-                                <option selected>Type of Issue</option>
-                                <option>Graffiti</option>
-                                <option>Waste</option>
+                          <div class="col-xs-6" style="width: 130px;">
+                              <select id="issuedd1" class="form-control">
+                                <option selected="selected">Type of Issue</option>
+                              
                               </select>
                           </div>
 
+                          <div class="col-xs-6" style="width: 130px;">
+                              <select id="issuedd2" class="form-control">
+                                <option selected="selected">Barangay</option>
+                                
+                              </select>
+                          </div>
+                          
+
                           <div class="form-group">
                             <label for="exampleFormControlTextarea1">Report description:</label>
-                            <textarea class="form-control reportdesc" id="exampleFormControlTextarea1" rows="3" cols="30"></textarea>
+                            <textarea class="form-control reportdesc" id="desc" rows="3" cols="30"></textarea>
+
                           </div>
                           
 
                          <div class="form-group">
                               <label for="exampleFormControlFile1">Select image:</label>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              <input type="file" class="form-control-file" id="btnUpload">
                               
                         </div>
 
                             <div class="form-check ml-4">
-                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                          <label class="form-check-label" for="defaultCheck1">
+                          <input class="form-check-input" type="checkbox" id="anon">
+                          <label class="form-check-label">
                             Anonymous
                           </label>
                         
                         </div>
                         
-                          
+                         
+
+                            <p id="demo"></p>
+
                           
 
                         </div>
                         
                       
                       <div class="mb-2 ml-2">
-                        <button  type="button" class="btn btn-primary">Submit</button>
+                        <button  type="button" onclick="newPost()" class="btn btn-primary">Submit</button>
                       </div>
                       </div>
                       
@@ -142,71 +157,37 @@
 
     <div class="card cardfeed example-1 square scrollbar-dusty-grass square thin">
       <div class="card-body">
-        <div class="position">
-          <div class="row">
+        <div class="position" id="feed">
+          <!--posts display here. v-->
+        <!-- <div class="row">
+
           <div class="card" style="width: 100%;">
             <div class="card-body cardo">
-              <h6 class="card-title">Captain Kap</h6>
-              <p class="card-text">mag tapon po tayo ng basura sa tamang lugar pls lang</p>
-              <p class="card-text">85 likes, 2 dislikes</p>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
-              <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+               <h6 class="card-title">goddess of fertility</h6>
+             <p class="card-text">ang daming basura parang engot luh</p>
+              <p class="card-text">35 likes, 2 dislikes</p>
+               <img src="../../images/logo1.png" class="card-img" alt="..."> 
+            </div>
+            <div class="card-footer cardo">
+              <p class="card-text">comments</p>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea> 
             </div>
           </div>
+
         </div>
-        <br>
-        <div class="row">
-        <div class="card" style="width: 100%;">
-          <div class="card-body cardo">
-            <h6 class="card-title">Juan Dela Cruz</h6>
-            <p class="card-text">ang daming basura parang engot luh</p>
-            <p class="card-text">35 likes, 2 dislikes</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-          <img src="../../images/logo1.png" class="card-img" alt="...">
-          <div class="card-body cardo">
-            <p class="card-text">comments</p>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="card" style="width: 100%;">
-          <div class="card-body">
-            <h6 class="card-title">Juan Dela Cruz</h6>
-            <p class="card-text">ang daming basura parang engot luh</p>
-            <p class="card-text">35 likes, 2 dislikes</p>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-          <img src="../../images/logo1.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">comments</p>
-            <p class="card-text">85 likes, 2 dislikes</p>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
-            <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-          </div>
-        </div>
-      </div>
-      <div class="row">
-          <div class="card" style="width: 100%;">
-            <div class="card-body">
-              <h6 class="card-title">Captain Kap</h6>
-              <p class="card-text">mag tapon po tayo ng basura sa tamang lugar pls lang</p>
-              <p class="card-text">85 likes, 2 dislikes</p>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
-              <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-            </div>
-          </div>
-        </div>
+
+       
         </div>
         
       </div>
     </div>
-          </div>
+          </div>-->
       
-      <!--
-      <div class="row">
+      
+          
+
+      
+      <!--<div class="row">
       <h4 class="card-title mt-2">Welcome, Cardo Dalisay</h4>
       </div>
       <div class="row">
@@ -234,6 +215,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
   <!-- TODO: Add SDKs for Firebase products that you want to use
        https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="../../js/main.js"></script>
@@ -242,3 +224,68 @@
 
 </body>
 </html>
+
+
+
+<!--
+<div class="row">
+          <div class="card" style="width: 100%;">
+            <div class="card-body cardo">
+              <h6 class="card-title">Captain Kap</h6>
+              <p class="card-text">mag tapon po tayo ng basura sa tamang lugar pls lang</p>
+              <p class="card-text">85 likes, 2 dislikes</p>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
+             
+            </div>
+          </div>
+        </div>
+        
+        <br>
+        <div class="row">
+        <div class="card" style="width: 100%;">
+          <div class="card-body cardo">
+            <h6 class="card-title">Juan Dela Cruz</h6>
+            <p class="card-text">ang daming basura parang engot luh</p>
+            <p class="card-text">35 likes, 2 dislikes</p>
+           
+          </div>
+          <img src="../../images/logo1.png" class="card-img" alt="...">
+          <div class="card-body cardo">
+            <p class="card-text">comments</p>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h6 class="card-title">Juan Dela Cruz</h6>
+            <p class="card-text">ang daming basura parang engot luh</p>
+            <p class="card-text">35 likes, 2 dislikes</p>
+            
+          </div>
+          <img src="../../images/logo1.png" class="card-img" alt="...">
+          <div class="card-body">
+            <p class="card-text">comments</p>
+            <p class="card-text">85 likes, 2 dislikes</p>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
+           
+        </div>
+      </div>
+      <div class="row">
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h6 class="card-title">Captain Kap</h6>
+              <p class="card-text">mag tapon po tayo ng basura sa tamang lugar pls lang</p>
+              <p class="card-text">85 likes, 2 dislikes</p>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" cols="72" placeholder="Add Comment"></textarea>
+              
+            </div>
+          </div>
+        </div>
+
+
+  -->
