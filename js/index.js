@@ -70,6 +70,67 @@ firebase.auth().onAuthStateChanged((user) => {
 	});
 });
 
+const firstname = document.querySelector("#firstname");
+firebase.auth().onAuthStateChanged((user) => {
+	  if (user) {
+	    // User logged in already or has just logged in.
+	    console.log(user.uid);
+	  } else {
+	    // User not logged in or has just logged out.
+	  }
+	  var docRef = db.collection("users").doc(user.uid);
+	  docRef.get().then(function(doc) {
+	    if (doc.exists) {
+	        console.log("Document data:", doc.data());
+	        firstname.innerHTML += "" +doc.data().fname+ ""
+	    } else {
+	        // doc.data() will be undefined in this case
+	        console.log("No such document!");
+	    }
+	}).catch(function(error) {
+	    console.log("Error getting document:", error);
+	});
+});
+
+const lastname = document.querySelector("#lastname");
+firebase.auth().onAuthStateChanged((user) => {
+	  if (user) {
+	    // User logged in already or has just logged in.
+	    console.log(user.uid);
+	  } else {
+	    // User not logged in or has just logged out.
+	  }
+	  var docRef = db.collection("users").doc(user.uid);
+	  docRef.get().then(function(doc) {
+	    if (doc.exists) {
+	        console.log("Document data:", doc.data());
+	        lastname.innerHTML += "" +doc.data().lname+ ""
+	    } else {
+	        // doc.data() will be undefined in this case
+	        console.log("No such document!");
+	    }
+	}).catch(function(error) {
+	    console.log("Error getting document:", error);
+	});
+});
+
+const reporter = document.querySelector("#reporter");
+var query = db.collection("posts")
+
+query.once("value")
+  .then(function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+      var brgyname = childSnapshot.val().barangayName;
+      var desc = childSnapshot.val().decription;
+      var issue = childSnapshot.val().infoGen;
+      var location = childSnapshot.val().location;
+
+
+
+  });
+});
+reporter.innerHTML += brgyname;
+//document.getElementById("reporter").innerHTML = hello;
 
 
 var URLimg = "https://firebasestorage.googleapis.com/v0/b/kotlintry-f6729.appspot.com/o/ImageFolder%2Fimage%2Fdownload.png?alt=media&token=7309790a-7384-4e18-9152-2672ba9f1323";

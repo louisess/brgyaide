@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<div>
+
+</div>
 <head>
   <title>BarangayAide Feed</title>
   <meta charset="UTF-8">
@@ -58,6 +61,7 @@
         </ul>
       </div>
     </div>
+
    </nav>
  
     
@@ -79,25 +83,27 @@
                       </div>
                       <div class="row mt-2">
                         <h6>Resident</h6>
+
                         
                       </div> 
                       <hr>
+
                       <div class="row mt-3">
-                      
+
                      <form>
 
                       <div class="form-group">
-                       
+
                         <h6 class="mb-3"><span class="lnr lnr-bubble"></span> Have an issue?</h6>
                         <div class="row m-1">
-                          <div class="col-xs-6" style="width: 130px;">
+                          <div class="col-xs-6 m-1" style="width: 130px;">
                               <select id="issuedd1" class="form-control">
                                 <option selected="selected">Type of Issue</option>
                               
                               </select>
                           </div>
 
-                          <div class="col-xs-6" style="width: 130px;">
+                          <div class="col-xs-6 m-1" style="width: 130px;">
                               <select id="issuedd2" class="form-control">
                                 <option selected="selected">Barangay</option>
                                 
@@ -108,6 +114,9 @@
                           <div class="form-group">
                             <label for="exampleFormControlTextarea1">Report description:</label>
                             <textarea class="form-control reportdesc" id="desc" rows="3" cols="30"></textarea>
+
+
+                        
 
                           </div>
                           
@@ -157,8 +166,21 @@
 
     <div class="card cardfeed example-1 square scrollbar-dusty-grass square thin">
       <div class="card-body">
-        <div class="position" id="feed">
+        <div class="filterdiv">
+          <div class="btn-group">
+            <button class="btn btn-sm dropdown-toggle filterbtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="lnr lnr-sort-amount-asc"></span> FILTER BY
+            </button>
+            <div class="dropdown-menu">
+              <button class="dropdown-item" type="button">Announcements</button>
+              <button class="dropdown-item" type="button">Solved</button>
+              <button class="dropdown-item" type="button">Unsolved</button>
+            </div>
+          </div>
+        </div>
           
+        <div class="position" id="feed">
+
           <!-- posts go here index.js line 193 - 251 -->
  
     </div>
@@ -214,7 +236,7 @@
         <div class="card" style="width: 100%;">
           <div class="card-body cardo">
             <h6 class="card-title">Juan Dela Cruz</h6>
-            <p class="card-text">ang daming basura parang engot luh</p>
+            <p class="card-text" id="reporter"></p>
             <p class="card-text">35 likes, 2 dislikes</p>
            
           </div>

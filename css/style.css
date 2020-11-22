@@ -736,6 +736,15 @@ width: 99%; }
     background-color: white;
 }
 
+.filterdiv{
+  float: right;
+}
+
+.filterbtn{
+  background-color: #c9e07d;
+}
+
+
 a{
   font-family: Poppins-Bold;
 }

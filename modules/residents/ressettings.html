@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BarangayAide Feed</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+  <link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../css/util.css">
+  <!--<link rel="stylesheet" type="text/css" href="../../css/main.css">-->
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+<!--===============================================================================================-->
+  
+</head>
+<div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+      <!--logo-->
+      <div class="navbar-left logo"> 
+        <a class="navbar-brand" href="#">
+        <img src="../../images/logo1.png" alt="logo" width="50px" height="50px">
+        </a>
+      </div>
+      <div class="navbar-header">
+        <!--button for responsive nav-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <!--nav content-->
+      <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="brgyfeed.html">Feed<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resaccount.html">My Account</a>
+            </li>
+            <li class="nav-item">
+              
+              <a href="#" class="nav-link" id="btnLogout" >Logout</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+   </nav>
+</div>
+
+
+<div class="feed">
+<div class="container">
+ 
+    <div class="row mt-5">
+     
+    </div>
+        <div class="card mt-5">
+          <div class="card-header">
+            <div id="dispUser"></div>
+          </div>
+          <div class="card-body">
+            <button><span class="lnr lnr-pencil"></span> EDIT INFORMATION</button>
+            <hr>
+            <div>
+              <div class="row">
+                <div class="col">
+                  <label><b>First Name</b></label>
+                  <div class="ml-3" id="firstname"></div>
+                </div>
+
+                
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label><b>Last Name</b></label>
+                  <div class="ml-3" id="lastname"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label><b>Email</b></label>
+                  <div class="ml-3" id="emadd">pahelp na lang mga lodz</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <label><b>Password</b></label>
+                  <div class="ml-3" id="pass"></div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+</div>
+</div>
+<!--===============================================================================================-->  
+  <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="../../vendor/bootstrap/js/popper.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/index.js"></script>
+
+</body>
+</html>
