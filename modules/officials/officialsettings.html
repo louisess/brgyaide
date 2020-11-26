@@ -44,15 +44,18 @@
       <!--nav content-->
       <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="brgyfeed.html">Feed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accounts.html">Accounts</a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="complaints.html">Complaints</a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="brgyfeed.html">Feed<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resaccount.html">My Account</a>
-            </li>
-            <li class="nav-item">
-              
-              <a href="#" class="nav-link" id="btnLogout" >Logout</a>
+              <a class="nav-link" href="officialsettings.html"><span class="sr-only">(current)</span>Profile</a>
             </li>
         </ul>
       </div>
@@ -73,13 +76,13 @@
             <div id="dispUser"></div>
           </div>
           <div class="card-body">
-            <button class="editinfo"><span class="lnr lnr-pencil"></span> EDIT INFORMATION</button>
+            <button class="editinfo" data-toggle="modal" data-target="#editModal"><span class="lnr lnr-pencil"></span> EDIT INFORMATION</button>
             <hr>
             <div>
               <div class="row">
                 <div class="col">
                   <label><b>First Name</b></label>
-                  <div class="ml-3" id="firstname"></div>
+                  <div class="ml-3" id="firstname">Jess</div>
                 </div>
 
                 
@@ -88,14 +91,14 @@
               <div class="row">
                 <div class="col">
                   <label><b>Last Name</b></label>
-                  <div class="ml-3" id="lastname"></div>
+                  <div class="ml-3" id="lastname">Day</div>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col">
                   <label><b>Email</b></label>
-                  <div class="ml-3" id="emadd">pahelp na lang mga lodz</div>
+                  <div class="ml-3" id="emadd">jessday@email.com</div>
                 </div>
               </div>
 
@@ -104,8 +107,8 @@
                   <label><b>Password</b></label>
                   <div class="ml-3" id="pass"></div>
                 </div>
-                
               </div>
+
             </div>
             
           </div>
@@ -131,7 +134,7 @@
               <div class="col">
                 <label><b>First Name</b></label>
                 <div class="ml-3" id="firstname">
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="First Name here">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Jess">
                 </div>
               </div>
 
@@ -142,7 +145,7 @@
               <div class="col">
                 <label><b>Last Name</b></label>
                 <div class="ml-3" id="lastname">
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name here">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Day">
                 </div>
               </div>
             </div>
@@ -151,7 +154,7 @@
               <div class="col">
                 <label><b>Email</b></label>
                 <div class="ml-3" id="emadd">
-                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="emailaddress@email.com">
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="jessday@email.com">
                 </div>
               </div>
             </div>
