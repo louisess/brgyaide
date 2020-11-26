@@ -68,12 +68,27 @@
     <div class="feed">
       <div class="container">
         <div class="posts">
-          
+          <div class="card mt-5">
+            <div class="card-header">
+              <div class="col-md-10">
+                <h5>Complaints</h5>
+              </div>
+            </div>
+            <div class="card-body" style="height: 800px">
+                <!--<button onclick="displayIframe()">Click me</button>-->
+                <button onclick="displayAll()" type="button" class="btn btn-secondary btn-sm">All</button>
+                <button onclick="displayReqs()" type="button" class="btn btn-secondary btn-sm">Requests</button>
+                <button onclick="displayPending()" type="button" class="btn btn-secondary btn-sm">Pending</button>
+                <button onclick="displayResolved()" type="button" class="btn btn-secondary btn-sm">Resolved</button>
+                <br>
+                <div id="iframeDisplay"></div>
+            </div>
+          </div>
         </div>
       </div><!--end content-->
     </div><!--container-->
 
-  
+
 <!--===============================================================================================-->  
   <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -83,6 +98,28 @@
   <script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
   <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    function displayAll() {
+      document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"allcomplaints.html\" frameborder=\"0\"></iframe>";
+
+    }
+
+    function displayReqs() {
+      document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"requests.html\" frameborder=\"0\"></iframe>"
+    }
+
+    function displayPending() {
+      document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"pending.html\" frameborder=\"0\"></iframe>"
+    }
+
+    function displayResolved() {
+      document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"resolved.html\" frameborder=\"0\"></iframe>"
+    }
+  </script>
 
 </body>
 </html>
