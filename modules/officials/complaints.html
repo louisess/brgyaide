@@ -76,10 +76,10 @@
             </div>
             <div class="card-body" style="height: 800px">
                 <!--<button onclick="displayIframe()">Click me</button>-->
-                <button onclick="displayAll()" type="button" class="btn btn-secondary btn-sm">All</button>
-                <button onclick="displayReqs()" type="button" class="btn btn-secondary btn-sm">Requests</button>
-                <button onclick="displayPending()" type="button" class="btn btn-secondary btn-sm">Pending</button>
-                <button onclick="displayResolved()" type="button" class="btn btn-secondary btn-sm">Resolved</button>
+                <button onclick="displayAll()" type="button" class="btn btn-dark btn-sm">All</button>
+                <button onclick="displayReqs()" type="button" class="btn btn-dark btn-sm">Requests</button>
+                <button onclick="displayPending()" type="button" class="btn btn-dark btn-sm">Pending</button>
+                <button onclick="displayResolved()" type="button" class="btn btn-dark btn-sm">Resolved</button>
                 <br>
                 <div id="iframeDisplay"></div>
             </div>
@@ -103,6 +103,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
+    document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"allcomplaints.html\" frameborder=\"0\"></iframe>";
+
     function displayAll() {
       document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"allcomplaints.html\" frameborder=\"0\"></iframe>";
 

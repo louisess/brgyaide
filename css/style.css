@@ -777,3 +777,7 @@ iframe{
    overflow: auto;
    overflow-y: auto;
 }
+
+.collapse-row.collapsed + tr {
+     display: none;
+}
