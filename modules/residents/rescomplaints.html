@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BarangayAide Account Settings</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+  <link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css">
+<!--===============================================================================================-->  
+  <link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="../../css/util.css">
+  <!--<link rel="stylesheet" type="text/css" href="../../css/main.css">-->
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+<!--===============================================================================================-->
+  
+</head>
+<div>
+ <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+      <!--logo-->
+      <div class="navbar-left logo"> 
+        <a class="navbar-brand" href="#">
+        <img src="../../images/logo1.png" alt="logo" width="50px" height="50px">
+        </a>
+      </div>
+      <div class="navbar-header">
+        <!--button for responsive nav-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <!--nav content-->
+      <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="brgyfeed.html">Feed<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resaccount.html">My Account</a>
+            </li>
+            <div class="dropdown nav-link">
+              <a class="dropdown-toggle" style="color: black;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Complaints
+              </a>
+
+              <div class="dropdown-menu complaintslink" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Your Complaints</a>
+                <a class="dropdown-item" href="#">Pending Complaints</a>
+                <a class="dropdown-item" href="#">Rejected Complaints</a>
+              </div>
+            </div>
+            <li class="nav-item">
+              
+              <a href="#" class="nav-link" id="btnLogout" >Logout</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+   </nav>
+</div>
+
+
+<div class="feed">
+<div class="container">
+ 
+    <div class="row mt-5">
+     
+    </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card mt-5" style="width: 100%">
+          <div class="card-header">
+            <div><h4>Complaints</h4></div>
+            <medium id="help" class="form-text text-muted">Complaints you submitted</medium>
+          </div>
+          <div class="card-body">
+            
+            <div class="row">
+              <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <!--date-->
+                  Dec 18, 2020
+                  <small class="form-text text-muted">Approved by: Jess Day</small>
+                  <small class="form-text text-muted">Status: Approved</small>
+                </div>
+                <div class="card-body">
+                  <div class="mb-2">
+                    <b>Type of issue:</b> Garbage <br>
+                    <b>Barangay:</b> Aurora Hill
+                  </div>
+                  
+                  <div class="mb-2">
+                  <p class="card-text">So many garbage here, there and everywhere!</p>
+                  </div>
+
+                  <div class="mb-2" >
+                    <img class="complaintimg" src="../../images/ex.jpg" alt="garbage" style="">
+                  </div>
+
+                </div>
+                <div class="card-footer text-muted">
+                  <button href="#" type="button" class="btn btn-primary btn-sm" disabled>Edit complaint</button>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <!--date-->
+                  Dec 17, 2020
+                  <small class="form-text text-muted">Approved by: -</small>
+                  <small class="form-text text-muted">Status: Pending</small>
+                </div>
+                <div class="card-body">
+                  <div class="mb-2">
+                    <b>Type of issue:</b> Vandalism <br>
+                    <b>Barangay:</b> Trancoville
+                  </div>
+                  
+                  <div class="mb-2">
+                  <p class="card-text">Someone spraypainted my wall. </p>
+                  </div>
+
+                  <div class="mb-2" >
+                    <img class="complaintimg" src="../../images/images.jpg" alt="garbage" style="">
+                    
+                  </div>
+
+                  
+                </div>
+                <div class="card-footer text-muted">
+                  <button href="#" type="button" class="btn btn-primary btn-sm">Edit complaint</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <!--date-->
+                  Dec 15, 2020
+                  <small class="form-text text-muted">Approved by: Jess Day</small>
+                  <small class="form-text text-muted">Status: Ongoing</small>
+                </div>
+                <div class="card-body">
+                  <div class="mb-2">
+                    <b>Type of issue:</b> Garbage <br>
+                    <b>Barangay:</b> Trancoville
+                  </div>
+                  
+                  <div class="mb-2">
+                  <p class="card-text">Can people stop throwing garbage in front of my house gosh dang</p>
+                  </div>
+
+                  <div class="mb-2" >
+                    <!--img here-->
+                  </div>
+
+                  
+                </div>
+                <div class="card-footer text-muted">
+                  <button href="#" type="button" class="btn btn-primary btn-sm" disabled>Edit complaint</button>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+
+
+
+</div>
+</div>
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit account info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div>
+            <div class="row">
+              <div class="col">
+                <label><b>First Name</b></label>
+                <div class="ml-3" id="firstname">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="First Name here">
+                </div>
+              </div>
+
+                
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label><b>Last Name</b></label>
+                <div class="ml-3" id="lastname">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name here">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label><b>Email</b></label>
+                <div class="ml-3" id="emadd">
+                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="emailaddress@email.com">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label><b>Password</b></label>
+                <div class="ml-3" id="pass">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              </div>
+            </div>
+
+             <div class="row">
+              <div class="col">
+                <label><b>Repeat Password</b></label>
+                <div class="ml-3" id="pass">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              </div>
+            </div>
+
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--===============================================================================================-->  
+  <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="../../vendor/bootstrap/js/popper.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="../../vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+
+  
+  <script src="../../js/main.js"></script>
+  <script src="../../js/index.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+       <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+<script>
+     $(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
+</script>
+
+</body>
+</html>

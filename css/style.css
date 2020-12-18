@@ -785,3 +785,12 @@ iframe{
 .complaintslink a:hover{
   color: red;
 }
+
+.issue{
+  color: red;
+}
+
+.complaintimg{
+  width: 285px; 
+  height: 180px;
+}
