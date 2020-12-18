@@ -781,3 +781,7 @@ iframe{
 .collapse-row.collapsed + tr {
      display: none;
 }
+
+.complaintslink a:hover{
+  color: red;
+}

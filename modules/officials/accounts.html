@@ -76,47 +76,142 @@
                   </div>
 
                   <div class="col-md-2">
-                      <button type="button" class="btn btn-primary">Create Account</button>
+                      <button type="button" class="btn btn-primary mb-2">Create Account</button>
                   </div>
               </div>
-                  <div class="row">
-                          <div class="col-md-12">
+            </div>
+                  <div class="row  m-3">
+                    <div class="col-md-12">
+                    <!--start of table-->
+                      <div id="accordion">
+                        <table class="table table-hover" id="accts">
+                          <thead>
+                            <tr>
+                              <th scope="col">Full Name</th>
+                              <th scope="col">Position</th>
+                              <th scope="col"></th>
+                            </tr>
+                          </thead>
 
-                            <div class="table-responsive-sm">
-                              <table class="table">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Full Name</th>
-                                    <th scope="col">Position</th>
-                                    <th scope="col">Action</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Mark Otto</td>
-                                    <td>Treasurer</td>
-                                    <td><button type="button" class="btn btn-danger btn-sm">✖ Delete</button>
-                                    <button type="button" class="btn btn-secondary btn-sm">ℹ Details</button>
-                                </td>
-                                  </tr>
-                                  <tr>
-                                    <td>Jacob Thornton</td>
-                                    <td>Secretary</td>
-                                    <td><button type="button" class="btn btn-danger btn-sm">✖ Delete</button>
-                                    <button type="button" class="btn btn-secondary btn-sm">ℹ Details</button>
-                                  </tr>
-                                  <tr>
-                                    <td>Larry the Bird</td>
-                                    <td>Counsilor</td>
-                                    <td><button type="button" class="btn btn-danger btn-sm">✖ Delete</button>
-                                   <button type="button" class="btn btn-secondary btn-sm">ℹ Details</button>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+
+                      <tbody>
+                          <tr data-toggle="collapse" data-target="#collapse1" class="clickable hover collapse-row collapsed accordion-toggle" title="ℹ Click row for details">
+                           <td>Mark Otto</td>
+                            <td>Official</td>
+                            <td>
+                              <button type="button" class="btn btn-danger btn-sm">✖ Delete</button>
+                            </td>
+                          </tr>
+
+                          <div id="collapse1" class="accordion-body collapse in">
+                          <tr>
+                            <!----------WHERE DETAILS APPEAR------------->
+                              <td colspan="3">
+                                    <table class="table table-borderless">
+                                      <tbody>
+                                        <tr>
+                                          <th scope="col">Full Name</th>
+                                          <td>Mark Otto</td>
+                                        </tr>
+
+                                        <tr>
+                                          <th scope="row">Position</th>
+                                          <td>Official</td>
+                                        </tr>
+
+                                        <tr>
+                                          <th scope="row">Email Address</th>
+                                          <td>motto@gmail.com</td>
+                                        </tr>
+
+                                      </tbody>
+                                    </table>
+                                  
+                              </td>
+                              <!----------END OF DETAILS------------->
+                          </tr>
                           </div>
+                           <tr data-toggle="collapse" data-target="#collapse2" class="clickable hover collapse-row collapsed accordion-toggle" title="ℹ Click row for details">
+                             <td>Jacob Thornton</td>
+                            <td>Official</td>
+                            <td><button type="button" class="btn btn-danger btn-sm">✖ Delete</button>
+                          </tr>
+
+                          <div id="collapse2" class="accordion-body collapse in">
+                          <tr>
+                            <!----------WHERE DETAILS APPEAR------------->
+                              <td colspan="3" style="vertical-align: middle;">
+                                  
+                                    <table class="table table-borderless">
+                                      <tbody>
+                                        <tr>
+                                          <th scope="col">Full Name</th>
+                                          <td>Jacob Thornton</td>
+                                        </tr>
+
+                                        <tr>
+                                          <th scope="row">Position</th>
+                                          <td>Official</td>
+                                        </tr>
+
+                                        <tr>
+                                          <th scope="row">Email Address</th>
+                                          <td>jthornton@gmail.com</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  
+                              </td>
+                              <!----------END DETAILS------------->
+                          </tr>
+                          </div>
+
+                          <tr data-toggle="collapse" data-target="#collapse3" class="clickable hover collapse-row collapsed accordion-toggle" title="ℹ Click row for details">
+                              <td>Larry the Bird</td>
+                              <td>Official</td>
+                              <td>
+                                <button type="button" class="btn btn-danger btn-sm">✖ Delete</button>
+                              </td>
+                          </tr>
+
+                          <div id="collapse3" class="accordion-body collapse in">
+                          <tr>
+                            <!----------WHERE DETAILS APPEAR------------->
+                              <td colspan="3" style="vertical-align: middle;">
+                                  
+                                    <table class="table table-borderless">
+                                      <tbody>
+                                        <tr>
+                                          <th scope="col">Full Name</th>
+                                          <td>Larry the Bird</td>
+                                        </tr>
+
+                                        <tr>
+                                          <th scope="row">Position</th>
+                                          <td>Official</td>
+                                        </tr>
+
+                                        <tr>
+                                          <th scope="row">Email Address</th>
+                                          <td>lbird@gmail.com</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                              </td>
+                              <!----------WHERE DETAILS END------------->
+                          </tr>
                         </div>
+
+                      </tbody>
+                      </table>
                       </div>
+                        
+                        
+                    
+                      <!--end of table-->
+                      </div>
+
+                    </div>
 
             </div>
           </div>
@@ -126,14 +221,22 @@
 
   
 <!--===============================================================================================-->  
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/bootstrap/js/popper.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-  <script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script>
+$('.collapse').on('show.bs.collapse', function () {
+    $('.collapse.in').collapse('hide');
+});
+</script>
 
 </body>
 </html>
